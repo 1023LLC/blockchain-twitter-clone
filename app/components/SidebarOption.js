@@ -1,0 +1,29 @@
+const style = {
+    wrapper: `w-min flex items-center rounded-[1000px] p-4 cursor-ponter hover:bg-[#333c45] transition-all duration-200 hover:ease-in-out`,
+    iconContainer: `text-xl mr-4`,
+    textGeneral: `font-medium`,
+    textActive: `font-bold`,
+
+}
+
+
+
+function SidebarOption({ text, Icon, isActive, setSelected, redirect}){
+    return (
+        <div
+            className={style.wrapper}
+            onClick={() => {
+                setSelected(text)
+            }}
+        >
+            <div className={style.iconContainer}>
+                <Icon />
+            </div>
+            <div className={`${isActive ? style.textActive : style.textGeneral}`}>
+                {text}
+            </div>
+        </div>
+    )
+}
+
+export default SidebarOption
