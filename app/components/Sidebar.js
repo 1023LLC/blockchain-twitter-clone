@@ -93,11 +93,11 @@ function Sidebar({ initialSelectedIcon = "Home" }) {
 
                     </div>
                     <div className={style.profileRight}>
-                        <div classNAme={style.details}>
+                        <div className={style.details}>
                             <div className={style.name}>1023 LLC</div>
                             <div className={style.handle}>@0x22dF...5xf2df</div>
                         </div>
-                        <div classNAme={style.moreContainer}>
+                        <div className={style.moreContainer}>
                             <FiMoreHorizontal />
                         </div>
                     </div>
