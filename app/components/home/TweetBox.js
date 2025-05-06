@@ -8,12 +8,12 @@ import { MdOutlineLocationOn } from 'react-icons/md'
 
 
 const style ={
-    wrapper: `px-4 flex flex-row border-b borer-[#38444d] pb-4`,
+    wrapper: `px-4 flex flex-row border-b border-[#38444d] pb-4`,
     tweetBoxLeft: `mr-4`,
     tweetBoxRight: `flex-1`,
     profileImage: `h-12 w-12 rounded-full`,
     inputField: `w-full h-full outline-none bg-transparent text-lg`,
-    formLowerContaner: `flex`,
+    formLowerContainer: `flex`,
     iconsContainer: `text-[#1d9bf0] flex flex-1 items-center `,
     icon: `mr-2`,
     submitGeneral: `px-6 py-2 rounded-3xl font-bold`,
@@ -31,6 +31,7 @@ const TweetBox = () => {
     console.log(tweetMessage)
   }
 
+
   return (
     <div className={style.wrapper}>
       <div className={style.tweetBoxLeft}>
@@ -44,7 +45,7 @@ const TweetBox = () => {
             value={tweetMessage}
             onChange={(e) => setTweetMessage(e.target.value)}
           />
-          <div className={style.formLowerContaner}>
+          <div className={style.formLowerContainer}>
             <div className={style.iconsContainer}>
               <BsCardImage className={style.icon} />
               <RiFileGifLine className={style.icon} />
@@ -61,11 +62,8 @@ const TweetBox = () => {
               Tweet
             </button>
           </div>
-          
         </form>
       </div>
-
-
     </div>
   )
 }
