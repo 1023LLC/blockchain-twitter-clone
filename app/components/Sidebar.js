@@ -1,5 +1,7 @@
 'use client'
 
+import Link from 'next/link'
+
 import { FiMoreHorizontal } from 'react-icons/fi'
 import { VscTwitter } from 'react-icons/vsc'
 import SidebarOption from './SidebarOption'
@@ -83,7 +85,7 @@ function Sidebar({ initialSelectedIcon = "Home" }) {
                     text={"Profile"}
                     isActive={Boolean(selected === 'Profile')}
                     setSelected={setSelected}
-                    redirect={('/public')}
+                    redirect={('/profile')}
                 />
                 <SidebarOption Icon={CgMoreO} text={"More"} isActive={Boolean(selected === 'More')} setSelected={setSelected} />
                 <div className={style.tweetButton}>Mint</div>
